@@ -1,0 +1,15 @@
+EDDY-04 Audio Difference Spotter - demo
+
+This needs to run from a web server; double-clicking index.html won't work.
+Either upload the folder to any static host, or run this inside the folder
+(needs Node.js) and open the address it shows:
+
+    npx serve .
+
+Links:
+  index.html                       settings panel + game
+  index.html?present=1             game only
+  index.html?mode=1&present=1      straight into a mode (1-4)
+  index.html?scaffold=0&present=1  scaffolding off
+
+Reload to start a new run.
