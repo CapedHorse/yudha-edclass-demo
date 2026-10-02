@@ -4,100 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="./favicon.png" />
-    <title>EDDY-04 Audio Difference Spotter · Dev Host</title>
-    <script type="module" crossorigin src="./assets/index-By9uSAEj.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BPtM_dDi.css">
+    <title>EDDY-04 Audio Difference Spotter</title>
+    <script type="module" crossorigin src="./assets/index-4uW8WwFH.js"></script>
   </head>
   <body>
-    <div class="host">
-      <header class="host-bar">
-        <strong>EDDY-04 Audio Difference Spotter</strong>
-        <span class="host-tag">Dev host · simulated EDClass backend</span>
-      </header>
-
-      <main class="host-main">
-        <section class="host-stage">
-          <div class="host-frame-controls">
-            <label>Lesson panel size
-              <select id="frame-size">
-                <option value="fill">Fill</option>
-                <option value="1024x768">1024 × 768 (Chromebook)</option>
-                <option value="800x600">800 × 600</option>
-                <option value="640x640">640 × 640 (narrow panel)</option>
-              </select>
-            </label>
-          </div>
-          <div class="host-frame-wrap">
-            <div id="game-frame" class="host-frame"></div>
-          </div>
-        </section>
-
-        <aside class="host-panel">
-          <form id="launch-form" class="host-card">
-            <h2>Placement (fieldValues)</h2>
-            <label>Game mode
-              <select name="mode">
-                <option value="mixed">Mixed (random modes)</option>
-                <option value="aural-decoding">Mode 1 · Aural Decoding (mcq)</option>
-                <option value="aural-discovery">Mode 2 · Aural Discovery (mcq)</option>
-                <option value="dimensional-matching">Mode 3 · Dimensional Matching (dnd)</option>
-                <option value="term-validation">Mode 4 · Term Validation (filling)</option>
-              </select>
-            </label>
-            <div class="host-row">
-              <label>Questions <input name="count" type="number" min="1" max="30" value="8" /></label>
-              <label>Level
-                <select name="level">
-                  <option value="0">Any</option>
-                  <option value="1">1 Easy</option>
-                  <option value="2">2 Medium</option>
-                  <option value="3">3 Hard</option>
-                  <option value="4">4 Mastery</option>
-                </select>
-              </label>
-            </div>
-
-            <fieldset>
-              <legend>Scaffolding</legend>
-              <label class="host-check"><input type="checkbox" name="scaffolding" checked /> All scaffolds (master)</label>
-              <label class="host-check"><input type="checkbox" name="scaffoldSubmit" checked /> SUBMIT button</label>
-              <label class="host-check"><input type="checkbox" name="scaffoldTimer" checked /> Timer</label>
-              <label class="host-check"><input type="checkbox" name="scaffoldBlanks" checked /> Letter blanks (mode 4)</label>
-              <label class="host-check"><input type="checkbox" name="autoPlayPrompt" checked /> Auto-play prompt clips</label>
-            </fieldset>
-
-            <div class="host-row">
-              <label>Seconds / question <input name="time" type="number" min="0" max="600" value="90" /></label>
-              <label>Run limit (s) <input name="runTime" type="number" min="0" max="3600" value="0" /></label>
-            </div>
-            <div class="host-row">
-              <label>Latency (ms) <input name="latency" type="number" min="0" max="20000" value="120" /></label>
-              <label>Command timeout (ms) <input name="timeout" type="number" min="500" max="60000" value="10000" /></label>
-            </div>
-            <label class="host-check"><input type="checkbox" name="hostEnd" /> Host owns end screen (onComplete)</label>
-
-            <div class="host-actions">
-              <button type="submit" class="host-primary">Launch run</button>
-              <button type="button" id="unmount">Unmount</button>
-              <button type="button" id="present" title="Open these settings with only the game on screen">Present ↗</button>
-            </div>
-            <p class="host-hint">0 seconds = no time limit. Settings are mirrored to the URL so a launch can be linked.</p>
-          </form>
-
-          <section class="host-card">
-            <h2>Report <span id="score" class="host-score"></span></h2>
-            <table class="host-results">
-              <thead><tr><th>#</th><th>Question</th><th>Mode</th><th>Result</th><th>Marks</th><th>Answer key</th></tr></thead>
-              <tbody id="results"></tbody>
-            </table>
-          </section>
-
-          <section class="host-card">
-            <h2>Protocol log <button type="button" id="clear-log" class="host-small">Clear</button></h2>
-            <ol id="log" class="host-log"></ol>
-          </section>
-        </aside>
-      </main>
-    </div>
+    <div id="app"></div>
   </body>
 </html>
