@@ -1,0 +1,9 @@
+EDDY-03 - demo
+
+This needs to run from a web server; double-clicking index.html won't work.
+Either upload the folder to any static host, or run this inside the folder
+(needs Node.js) and open the address it shows:
+
+    npx serve .
+
+Reload to start a new run.
